@@ -1,0 +1,40 @@
+.form {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 402px;
+	min-height: 25px;
+	margin-left: 10px;
+	margin-top: 11px;
+}
+
+.form__input {
+	width: 320px;
+	height: 25px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid @dark-grey;
+	color: @light-gray;
+
+	&:active::-webkit-input-placeholder,
+	&:focus::-webkit-input-placeholder {
+		color: @dark-grey;
+		font-weight: bold;
+	}
+}
+
+.form__button {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 500;
+	border: none;
+	background-color: transparent;
+	color: @red;
+	margin-bottom: 9px;
+	cursor: pointer;
+
+	&:focus,
+	&:hover {
+		color: @red-hover;
+	}
+}

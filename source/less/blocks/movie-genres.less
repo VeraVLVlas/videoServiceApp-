@@ -1,0 +1,139 @@
+.movie-genres {
+	width: 1440px;
+	min-height: 252px;
+	padding: 0 130px;
+	margin: 0 auto 73px;
+}
+
+.movie-genres__type {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	margin: -12px 0 0;
+}
+
+.movie-genres__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.movie-genres__list .movie-genres__category {
+	cursor: pointer;
+}
+
+.movie-genres__category {
+	width: 280px;
+	height: 208px;
+	list-style-type: none;
+	border-radius: 6px;
+	box-shadow: @shadow;
+}
+
+.movie-genres__link {
+	border-radius: 6px;
+
+	&--orange {
+		background: @orange-gradient-webkit;
+		background: @orange-gradient-moz;
+		background: @orange-gradient;
+	}
+
+	&--orange:focus,
+	&--orange:hover {
+		background: @orange-hover-gradient-webkit;
+		background: @orange-hover-gradient-moz;
+		background: @orange-hover-gradient;
+	}
+
+	&--pink {
+		background: @pink-gradient-webkit;
+		background: @pink-gradient-moz;
+		background: @pink-gradient;
+	}
+
+	&--pink:focus,
+	&--pink:hover {
+		background: @pink-hover-gradient-webkit;
+		background: @pink-hover-gradient-moz;
+		background: @pink-hover-gradient;
+	}
+
+	&--blue {
+		background: @blue-gradient-webkit;
+		background: @blue-gradient-moz;
+		background: @blue-gradient;
+	}
+
+	&--blue:focus,
+	&--blue:hover {
+		background: @blue-hover-gradient-webkit;
+		background: @blue-hover-gradient-moz;
+		background: @blue-hover-gradient;
+	}
+
+	&--gray {
+		background: @gray-gradient-webkit;
+		background: @gray-gradient-moz;
+		background: @gray-gradient;
+	}
+
+	&--gray:focus,
+	&--gray:hover {
+		background: @gray-hover-gradient-webkit;
+		background: @gray-hover-gradient-moz;
+		background: @gray-hover-gradient;
+	}
+}
+
+.movie-genres__link {
+	width: 280px;
+	height: 208px;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: @white;
+}
+
+.movie-genres__list .movie-genres__category > .movie-genres__link {
+	display: block;
+	text-decoration: none;
+}
+
+.movie-genres__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+
+	&--comedy::before,
+	&--drama::before,
+	&--fantasy::before,
+	&--horrors::before {
+		content: "";
+		display: block;
+		background-repeat: no-repeat;
+		width: 48px;
+		height: 48px;
+		margin-top: 80px;
+		margin-bottom: 32px;
+	}
+
+	&--comedy::before {
+		background-image: url("../img/smile.png");
+	}
+
+	&--drama::before {
+		background-image: url("../img/cry.png");
+	}
+
+	&--fantasy::before {
+		background-image: url("../img/ufo.png");
+	}
+
+	&--horrors::before {
+		background-image: url("../img/horror.png");
+	}
+}

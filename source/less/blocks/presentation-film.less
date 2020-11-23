@@ -1,0 +1,81 @@
+.presentation-film {
+	width: 1440px;
+	min-height: 478px;
+	padding: 0 130px;
+	margin: 0 auto;
+}
+
+.presentation-film__heading {
+	display: flex;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: left;
+	margin: 31px 0 0;
+
+	&::before {
+		content: "";
+		display: inline-block;
+		background-image: url("../img/fier.png");
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 28px;
+	}
+}
+
+.presentation-film__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	min-height: 478px;
+	padding: 0;
+	margin: 17px 0 0;
+}
+
+.presentation-film__category {
+	position: relative;
+	width: 280px;
+	min-height: 434px;
+	list-style-type: none;
+}
+
+.presentation-film__link {
+	outline: none;
+}
+
+.presentation-film__picture {
+	width: 280px;
+	height: 370px;
+	border-radius: 4px;
+}
+
+.presentation-film__info {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 280px;
+	height: 370px;
+	background: @dark-grey;
+	opacity: 0.8;
+	border-radius: 8px;
+}
+
+.presentation-film__link:focus > .presentation-film__info,
+.presentation-film__link:hover > .presentation-film__info {
+	display: block;
+}
+
+.presentation-film__description {
+	padding: 16px;
+	color: @gray-footer;
+	font-size: 16px;
+	line-height: 23px;
+	margin: 0;
+}
+
+.presentation-film__name {
+	font-size: 20px;
+	line-height: 24px;
+	color: @dark-grey;
+	margin: 12px 0 0;
+}

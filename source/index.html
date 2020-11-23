@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>«Video service»</title>
+	<link href="css/styles.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body class="page__body">
+	<header class="page-header">
+		<nav class="main-nav">
+			<a class="main-nav__logo">
+				<img class="main-nav__picture-logo" src="img/logo.svg" width="182" height="36" alt="Логотип «Видеосервиса»">
+			</a>
+			<form class="form">
+				<input class="form__input" type="search" name="search" placeholder="Поиск...">
+				<button class="form__button" type="submit">Найти</button>
+			</form>
+			<a class="main-nav__username" tabindex="0"></a>
+			<button class="main-nav__come" type="button">Войти</button>
+			<button class="main-nav__log-off" type="button">Выйти</button>
+		</nav>
+	</header>
+
+	<main class="page__main">
+		<section class="presentation-film">
+			<div class="presentation-film__options site-guide">
+				<a class="site-guide__content  site-guide__content--active">Фильмы</a>
+				<a class="site-guide__content" href="catalog.html">Телеканалы</a>
+			</div>
+			<h1 class="visually-hidden">Подборка новинок фильмов</h1>
+			<h2 class="presentation-film__heading">Новинки</h2>
+			<ul class="presentation-film__list">
+				<li class="presentation-film__category">
+					<a class="presentation-film__link" href="#">
+						<picture>
+							<source type="image/webp" srcset="img/picture-cat.webp">
+							<img class="presentation-film__picture" src="img/picture-cat.png" width="280" height="370" alt="Мульт в кино">
+						</picture>
+						<div class="presentation-film__info">
+							<p class="presentation-film__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<h3 class="presentation-film__name">Мульт в кино. Выпуск №103. Некогда грустить!</h3>
+					</a>
+				</li>
+				<li class="presentation-film__category">
+					<a class="presentation-film__link" href="#">
+						<picture>
+							<source type="image/webp" srcset="img/picture-batmen.webp">
+							<img class="presentation-film__picture" src="img/picture-batmen.png" width="280" height="370" alt="Бэтмен">
+						</picture>
+						<div class="presentation-film__info">
+							<p class="presentation-film__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<h3 class="presentation-film__name">Новый Бэтмен</h3>
+					</a>
+				</li>
+				<li class="presentation-film__category">
+					<a class="presentation-film__link" href="#">
+						<picture>
+							<source type="image/webp" srcset="img/picture-hollywood.webp">
+							<img class="presentation-film__picture" src="img/picture-hollywood.png" width="280" height="370" alt="Однажды в Голливуде">
+						</picture>
+						<div class="presentation-film__info">
+							<p class="presentation-film__description">
+								Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века».
+								Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в
+								стремительно меняющемся мире киноиндустрии.
+							</p>
+						</div>
+						<h3 class="presentation-film__name">Однажды... в Голливуде</h3>
+					</a>
+				</li>
+				<li class="presentation-film__category">
+					<a class="presentation-film__link" href="#">
+						<picture>
+							<source type="image/webp" srcset="img/picture-girl.webp">
+							<img class="presentation-film__picture" src="img/picture-girl.png" width="280" height="370" alt="Стриптезёрши">
+						</picture>
+						<div class="presentation-film__info">
+							<p class="presentation-film__description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+						</div>
+						<h3 class="presentation-film__name">Стриптезёрши</h3>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="movie-genres">
+			<h2 class="movie-genres__type">Жанры</h2>
+			<ul class="movie-genres__list">
+				<li class="movie-genres__category">
+					<a class="movie-genres__link movie-genres__link--orange" href="#">
+						<h3 class="movie-genres__heading movie-genres__heading--comedy">Комедии</h3>
+					</a>
+				</li>
+				<li class="movie-genres__category">
+					<a class="movie-genres__link movie-genres__link--pink" href="#">
+						<h3 class="movie-genres__heading movie-genres__heading--drama">Драма</h3>
+					</a>
+				</li>
+				<li class="movie-genres__category">
+					<a class="movie-genres__link movie-genres__link--blue" href="#">
+						<h3 class="movie-genres__heading movie-genres__heading--fantasy">Фантастика</h3>
+					</a>
+				</li>
+				<li class="movie-genres__category">
+					<a class="movie-genres__link movie-genres__link--gray" href="#">
+						<h3 class="movie-genres__heading movie-genres__heading--horrors">Ужасы</h3>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__information">
+			<a class="page-footer__logo" href="https://htc-cs.ru/">
+				<img src="img/htc-cs-logo.svg" width="32" height="64" alt="Логотип компании ЦВТ">
+			</a>
+			<div class="page-footer__block">
+				<p class="page-footer__address">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+				<a class="page-footer__tel" href="tel:+73412938861">+7 (3412) 93-88-61,</a>
+				<a class="page-footer__tel" href="tel:+73412432929">43-29-29</a>
+				<a class="page-footer__link" href="https://htc-cs.ru/">htc-cs.ru</a>
+			</div>
+		</div>
+	</footer>
+
+	<section class="popup">
+		<h2 class="visually-hidden">Вход в личный кабинет</h2>
+		<form class="popup__form" action="#" method="post">
+			<fieldset class="popup__fieldset">
+				<h2 class="popup__entry">Вход</h2>
+				<label for="login"></label>
+				<input class="popup__input popup__input--data" type="text" id="login" name="login" placeholder="Логин" required>
+				<label for="password"></label>
+				<input class="popup__input popup__input--password" type="password" id="password" name="password" placeholder="Пароль" required>
+				<input class="popup__checkbox visually-hidden" type="checkbox" id="remember" name="remember" checked>
+				<label class="popup__label" for="remember"> Запомнить</label>
+				<button class="popup__button" type="submit">Войти</button>
+			</fieldset>
+		</form>
+	</section>
+
+	<script src="js/main.min.js"></script>
+
+</body>

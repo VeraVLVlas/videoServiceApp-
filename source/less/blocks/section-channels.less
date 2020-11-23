@@ -1,0 +1,128 @@
+.section-channels {
+	width: 1440px;
+	min-height: 696px;
+	padding: 0 130px;
+	margin: 0 auto 72px;
+}
+
+.section-channels__element {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 1199px;
+	height: 696px;
+	position: relative;
+}
+
+.section-channels__overflow {
+	min-height: 830px;
+}
+
+.section-channels__element::-webkit-scrollbar-thumb {
+	background-color: @scrollbar-slider;
+}
+
+.section-channels__element::-webkit-scrollbar {
+	width: 8px;
+}
+
+.section-channels__element::-webkit-scrollbar-track {
+	background-color: @gray-footer;
+	border-radius: 2px;
+}
+
+.section-channels__element::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background: @scrollbar-slider;
+}
+
+.section-channels__list {
+	padding: 0;
+	margin: 0;
+}
+
+.section-channels__item {
+	display: flex;
+	align-items: center;
+	width: 1180px;
+	min-height: 162px;
+	background-color: @gray-footer;
+	list-style-type: none;
+	margin-bottom: 16px;
+	border-radius: 8px;
+
+	&:nth-child(2) > .section-channels__wrapper {
+		margin-left: 146px;
+	}
+
+	&--amedia::before,
+	&--first-channel::before,
+	&--rbk::before,
+	&--two::before {
+		content: "";
+		display: block;
+		background-repeat: no-repeat;
+		width: 114px;
+		height: 65px;
+		margin-left: 170px;
+	}
+
+	&--first-channel::before {
+		background-image: url("../img/logo-one.png");
+	}
+
+	&--two::before {
+		background-image: url("../img/logo-two.png");
+		margin-left: 140px;
+	}
+
+	&--rbk::before {
+		background-image: url("../img/logo-rbc.png");
+	}
+
+	&--amedia::before {
+		background-image: url("../img/logo-amedia.png");
+	}
+}
+
+.section-channels__wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 162px;
+	margin-left: 116px;
+}
+
+.section-channels__link {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	color: @dark-grey;
+	margin-top: 21px;
+	margin-bottom: 17px;
+}
+
+.section-channels__span {
+	&--uppercase {
+		text-transform: uppercase;
+	}
+}
+
+.section-channels__broadcast {
+	color: @dark-grey;
+	margin-bottom: 12px;
+
+	&--active {
+		color: @red;
+	}
+}
+
+.section-channels__time {
+	padding-right: 20px;
+}
+
+.section-channels__channel {
+	margin: 0;
+
+	&--uppercase {
+		text-transform: uppercase;
+	}
+}

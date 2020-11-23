@@ -1,0 +1,103 @@
+.popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 100%;
+	background-color: @dark-grey-opacity;
+}
+
+.popup__open {
+	display: block;
+}
+
+.popup__form {
+	width: 304px;
+	background-color: @white;
+	border-radius: 8px;
+	margin: 190px auto 0;
+}
+
+.popup__fieldset {
+	width: 232px;
+	min-height: 394px;
+	margin: 0 auto;
+	border: none;
+}
+
+.popup__entry {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 33px;
+	text-align: center;
+	margin: 36px 0 24px;
+}
+
+.popup__input {
+	width: 232px;
+	height: 25px;
+	border: none;
+	border-bottom: 1px solid @dark-grey;
+	outline: none;
+	margin-bottom: 24px;
+
+	&::placeholder {
+		color: @gray-popap;
+		outline: none;
+	}
+
+	&:active::placeholder,
+	&:focus::placeholder {
+		outline: none;
+	}
+}
+
+.popup__label {
+	color: @dark-grey;
+	margin-left: 24px;
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -24px;
+		right: 89px;
+		width: 16px;
+		height: 16px;
+		border: 1px solid @dark-grey;
+		border-radius: 4px;
+	}
+}
+
+.popup__checkbox:checked + .popup__label::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -20px;
+	width: 10px;
+	height: 8px;
+	background-image: url("../img/vector.svg");
+	background-repeat: no-repeat;
+}
+
+.popup__button {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	padding: 9px 32px 10px;
+	background-color: @red;
+	color: @white;
+	border-radius: 4px;
+	margin-top: 111px;
+
+	&:hover {
+		background-color: @red-hover;
+		outline: none;
+	}
+}
